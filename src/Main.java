@@ -5,12 +5,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Write the 5 numbers:");
         int count=1;
-        int sum = 0;
+        double sum = 0;
         do{
             System.out.println("Enter number #" + count + ": ");
             String a = scanner.nextLine();
             try{
-                int number= Integer.parseInt(a);
+                double number= Double.parseDouble(a);
                 count++;
                 sum+=number;
             }catch (NumberFormatException badUserdata){
