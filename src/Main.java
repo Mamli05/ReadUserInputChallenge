@@ -6,12 +6,11 @@ public class Main {
         System.out.println("Write the 5 numbers:");
         int count=1;
         int sum = 0;
-        int number = 0;
         do{
             System.out.println("Enter number #" + count + ": ");
             String a = scanner.nextLine();
             try{
-                number= Integer.parseInt(a);
+                int number= Integer.parseInt(a);
                 count++;
                 sum+=number;
             }catch (NumberFormatException badUserdata){
